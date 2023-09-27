@@ -7,6 +7,7 @@
   <title>Ayush Govt Portal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
 
@@ -14,17 +15,18 @@
 
   <!-- HEADER Section -->
   <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="height: 100px;">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="" alt="" >
-        <img class="bi me-2" width="40" height="32" src="/mainapp/static/images/gujarat.PNG">
-        <img class="bi me-2" width="40" height="32" src="/mainapp/static/images/gujarat.PNG">
-        <span class="fs-4">Prakruti AI Chatbot</span>
+        <!-- <img class="bi me-2" width="85" height="40" src="/static/images/gujarat-removebg-preview.png"> -->
+        <img class="bi me-2 mx-3" width="105" height="60" src="/static/images/minofayush.png">
+        <img class="bi me-2 mx-4" width="85" height="40" src="/static/images/g20-removebg-preview.png">
+        <span class="fs-4 mx-3">Prakruti AI Chatbot</span>
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Prakruti Chatbot</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">More About Ayurveda</a></li>
+      <ul class="nav nav-pills navbar navbar-expand-lg ">
+        <li class="nav-item navbar-expand-sm "><a href="#chatbot" class="nav-link active" aria-current="page">Prakruti Chatbot</a></li>
+        <li class="nav-item"><a href="#ayurveda" class="nav-link">More About Ayurveda</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Book Consultancy</a></li>
       </ul>
     </header>
@@ -33,35 +35,127 @@
 
 <!-- overview section -->
   
-  <div class="container">
+  <!-- <div class="container">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&w=600"
-          class="d-block mx-lg-auto img-fluid" alt=" " width="500" height="300" loading="lazy">
+      <div class="col-10 col-sm-8 col-lg-6"> -->
+        <!-- <img src="/static/images/bg.jpg"
+          class="d-block mx-lg-auto img-fluid" alt=" " width="500" height="800" loading="lazy"> -->
       </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.</p>
+      <!-- <div class="col-lg-6"> -->
+        <div class="container header-section flex">
+          <div class="header-left">
+              <h1>Ayurvedic Prakirti</h1>
+              <p>In Ayurveda, "Prakriti" refers to an individual's natural and inherent constitution. It is the unique combination of physical, mental, and emotional traits that make each person distinct. </p>
+              <a href="#chatbot" class="btn btn-primary btn-lg px-4 me-md-2" target="_blank">Test Prakriti</a>
+          </div>
+          <div class="header-right">
+              <img src="https://www.chandigarhayurvedcentre.com/wp-content/uploads/2021/01/Prakriti-Analysis.jpg" alt="hero image">
+          </div>
+      </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          
         </div>
       </div>
     </div>
+    <section class="features-section">
+      <div class="container">
+          <div class="features-header">
+              <h2>Ayurveda- The way of living</h2>
+              <!-- <a href="#" class="secondary-button">Know More <i
+                      class="fa-solid fa-arrow-right fa-beat fa-xl"></i></a> -->
+              </div>
+      </div>
+  </section>
+
+  <section class="big-feature-section">
+      <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+          <div class="feature-img">
+              <img src="./static/images/vatta.jpg" alt="searching">
+          </div>
+          <div class="feature-description flex">
+              <h2>Vatta Dosha</h2>
+              <p>In Ayurveda, Vata represents the air and ether elements. It governs bodily functions like movement, communication, and creativity. Imbalance can lead to anxiety, dryness, and digestive issues.
+              </p>
+
+          </div>
+      </div>
+  </section>
+
+  <section class="big-feature-section">
+      <div class="container flex big-feature-container">
+          <div class="feature-img">
+              <img src="./static/images/images.png" id="pitta"  alt="searching">
+          </div>
+          <div class="feature-description flex">
+              <h2>Pitta Dosha</h2>
+              <p>Pitta embodies the fire and water elements, controlling metabolism, digestion, and body temperature. An excess can result in irritability, inflammation, and skin problems.</p>
+          </div>
+      </div>
+  </section>
+
+  <section class="big-feature-section">
+      <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+          <div class="feature-img">
+              <img src="./static/images/Img 2.png" alt="searching">
+          </div>
+          <div class="feature-description flex">
+              <h2>Kapha Dosha</h2>
+              <p>Kapha is composed of earth and water, governing stability, structure, and bodily lubrication. When imbalanced, it can cause lethargy, weight gain, and congestion.
+              </p>
+
+          </div>
+      </div>
+  </section>
+  <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="https://www.suayuclinic.com/ayurveda/">Read more</button> -->
+<a href="https://www.suayuclinic.com/ayurveda/" class="btn btn-primary btn-lg px-4 me-md-2" target="_blank">Read more</a>
   </div>
 
 
   <!-- CHATBOT AREA -->
-  <div class="container my-5">
+  <div class="container my-5" id="chatbot">
     <div class="p-5 text-center bg-body-tertiary rounded-3">
-      <h1 class="text-body-emphasis">Basic jumbotron</h1>
-      <p class="lead">
-        This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility
-        classes.
-      </p>
+      
+      <flowise-fullchatbot></flowise-fullchatbot>
+      <script type="module">
+          import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+          Chatbot.initFull({
+              chatflowid: "e859a745-f0b7-42c8-90cf-1db3492d53e5",
+              apiHost: "https://flowise-sih.onrender.com",
+              theme: {
+                  chatWindow: {
+                      welcomeMessage: "Hello! This is custom welcome message",
+                      backgroundColor: "#ffffff",
+                      height: 550,
+                      width: 1030,
+                      fontSize: 16,
+                      poweredByTextColor: "#303235",
+                      botMessage: {
+                          backgroundColor: "#f7f8ff",
+                          textColor: "#303235",
+                          showAvatar: true,
+                          avatarSrc: "./static/images/botlogo.jpeg",
+                      },
+                      userMessage: {
+                          backgroundColor: "#3B81F6",
+                          textColor: "#ffffff",
+                          showAvatar: true,
+                          avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                      },
+                      textInput: {
+                          placeholder: "Type your question",
+                          backgroundColor: "#ffffff",
+                          textColor: "#303235",
+                          sendButtonColor: "#3B81F6",
+                      }
+                  }
+              }
+          })
+      </script>
     </div>
+  </div>
+
+  <div id="ayurveda">
+    
   </div>
 
   <!-- footer -->
